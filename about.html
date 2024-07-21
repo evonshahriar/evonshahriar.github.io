@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Md Evon Shahriar Sohan - Computer Engineer & AI Researcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #f0e6d2;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(26, 26, 26, 0.85);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cinzel', serif;
+            color: #d3a625;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '⚡';
+            position: absolute;
+            left: 0;
+            color: #d3a625;
+        }
+
+        .award-list li::before {
+            content: '🏆';
+        }
+
+        .profile-photo {
+            border-radius: 50%;
+            border: 5px solid #d3a625;
+            max-width: 200px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"></header>
+
+    <main class="container">
+        <h1 class="center-text">About Me</h1>
+        <img src="evon-logo.png" alt="Md Evon Shahriar Sohan" class="profile-photo">
+        <div class="content">
+            <section class="column">
+                <h2>Summary</h2>
+                <p>
+                    I'm a computer engineer, diving deep into the realm of AI, joining cutting-edge research focused on sustainability, 
+                    and crafting innovative solutions that make a real difference.
+                </p>
+
+                <h2>Education</h2>
+                <ul>
+                    <li>Master of Computing (By Research), Universiti Multimedia (MMU), Malaysia (2024-Present)</li>
+                    <li>B.Eng. in Computer Science and Technology, Southwest Forestry University (SWFU), China (2018-2022)</li>
+                    <li>Higher Secondary Certificate in Science, Gazipur Cantonment College, Bangladesh (2014-2016)</li>
+                    <li>Secondary School Certificate in Science, Gazipur Cant. Board High School, Bangladesh (2004-2014)</li>
+                </ul>
+
+                <h2>Awards</h2>
+                <ul class="award-list">
+                    <li>MMU High Achievers Research Scholarship (2024)</li>
+                    <li>SWFU Dean's Award Nomination for Outstanding Bachelor Thesis (2021)</li>
+                    <li>Full-ride Scholarship for Bachelor Studies, SWFU (2018-2022)</li>
+                    <li>Sena Kalyan Educational Grant for achieving A+ in all subjects on public board exams (2014-2016)</li>
+                </ul>
+            </section>
+
+            <section class="column">
+                <h2>Professional Experience</h2>
+                <article>
+                    <h3>Research Student, Mahdy's Research Academy, Bangladesh (12/23 – 12/24)</h3>
+                    <p>Conducted research on quantum machine learning, medical image analysis, and XAI under the supervision of Assoc. Prof. Dr. Mahdy Rahman Chowdhury.</p>
+                </article>
+                <article>
+                    <h3>Engineering Student Intern, Huaxin Zhiyuan EdTech Co. Ltd., China (09/21 – 10/21)</h3>
+                    <p>Collaborated with WISEZONE, conducting security audits and risk assessments to fortify data systems.</p>
+                </article>
+
+                <h2>Skills</h2>
+                <ul class="skill-list">
+                    <li>Programming: Python, R, Javascript, Scala, C++, SQL, HTML, CSS</li>
+                    <li>Big Data & ML: Spark, Hadoop, MongoDB, TensorFlow, Keras, PyTorch</li>
+                    <li>Data Science: A/B testing, ETL, hypothesis testing, data visualization, statistical analysis</li>
+                </ul>
+
+                <h2>Languages</h2>
+                <ul class="skill-list">
+                    <li>English: Fluent</li>
+                    <li>Bengali: Mother-tongue</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Md Evon Shahriar Sohan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        });
+    </script>
+    
+</body>
+</html>

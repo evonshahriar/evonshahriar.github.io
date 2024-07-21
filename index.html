@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evon Shahriar - Computer Engineer & AI Researcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <style>
+        .highlight {
+            background-color: rgba(211, 166, 37, 0.2);
+            padding: 0 5px;
+            border-radius: 5px;
+        }
+        .profile-index {
+            max-width: 200px;
+            display: block;
+            margin: 20px auto;
+        }
+        .handwritten-quote {
+            font-family: 'Gloria Hallelujah', cursive;
+            font-size: 1.4em;
+            line-height: 1.4;
+            color: #ffffff;
+            background-color: rgba(26, 26, 26, 0.7);
+            border-left: 4px solid #740001;
+            border-right: 4px solid #740001;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 20px 10px 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+        }
+        .left-align-text {
+            text-align: left;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"></header>
+
+    <main class="container">
+        <div class="center-text">
+            <h1>Welcome to Evon's Web Archive!</h1>
+            <img src="evon-portrait-logo.png" alt="Md Evon Shahriar Sohan" class="profile-index">
+        </div>
+        <blockquote class="handwritten-quote">
+            Greetings! I'm Evon, a computer engineer passionate about tech and sustainability.
+            Currently pursuing my Master's at MMU, Malaysia.
+        </blockquote>
+        <div class="left-align-text">
+            <h2>Areas of Expertise</h2>
+            <ul class="skill-list">
+                <li>Applied Artificial Intelligence</li>
+                <li>Image Analysis</li>
+                <li>Environmental Monitoring</li>
+            </ul>
+        </div>
+        <div class="center-text">
+            <a href="about.html" class="cta-button">Learn More About My Work</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Md Evon Shahriar Sohan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        });
+    </script>
+    
+</body>
+</html>

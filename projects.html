@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Md Evon Shahriar Sohan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Search bar styling */
+        #search-bar {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #d3a625;
+            border-radius: 5px;
+            background-color: rgba(26, 26, 26, 0.9);
+            color: #f0e6d2;
+        }
+
+        /* Projects Table Styling */
+        .projects-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: rgba(26, 26, 26, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .projects-table th, .projects-table td {
+            padding: 12px 15px;
+            text-align: left;
+            color: #f0e6d2;
+            border-bottom: 1px solid #d3a625;
+        }
+
+        .projects-table th {
+            background-color: #740001;
+            color: #d3a625;
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            border-bottom: 2px solid #d3a625;
+        }
+
+        .projects-table tr:nth-child(even) td {
+            background-color: rgba(26, 26, 26, 0.75);
+        }
+
+        .projects-table a {
+            color: #c19a6b; /* Bronze color for links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .projects-table a:hover {
+            color: #f0e6d2; /* Light color on hover */
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"></header>
+
+    <main class="container">
+        <h1>Projects</h1>
+        <p>Welcome to my projects page! Here, you will find a collection of my ongoing research projects, both academic and personal. Each project represents my dedication to applying technology and innovation to real-world challenges.</p>
+
+        <input type="text" id="search-bar" placeholder="Search projects...">
+
+        <section class="project-section">
+            <table class="projects-table" id="projects-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Project</th>
+                        <th>Description</th>
+                        <th>Links</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>AI-based Water Quality Monitoring System</td>
+                        <td>Developing an AI system to monitor water quality in real-time using sensor data and machine learning algorithms.</td>
+                        <td><a href="https://github.com/yourusername/water-quality-monitoring" target="_blank">GitHub</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Optimizing Development Aid Allocation</td>
+                        <td>Creating a data-driven approach to optimize the allocation of development aid using unsupervised machine learning techniques.</td>
+                        <td><a href="https://github.com/yourusername/development-aid-allocation" target="_blank">GitHub</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Navigation App for Visually Impaired</td>
+                        <td>Developing a mobile application that uses computer vision and AI to assist visually impaired individuals in navigating their surroundings safely.</td>
+                        <td><a href="https://github.com/yourusername/navigation-app" target="_blank">GitHub</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <p>For more details on any of these projects or to discuss potential collaborations, please feel free to <a href="contact.html">contact me</a>.</p>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Md Evon Shahriar Sohan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+
+            const searchBar = document.getElementById('search-bar');
+            searchBar.addEventListener('keyup', function() {
+                const filter = searchBar.value.toLowerCase();
+                const table = document.getElementById('projects-table');
+                const tr = table.getElementsByTagName('tr');
+
+                for (let i = 1; i < tr.length; i++) {
+                    const td = tr[i].getElementsByTagName('td');
+                    let display = false;
+
+                    for (let j = 0; j < td.length; j++) {
+                        if (td[j]) {
+                            if (td[j].innerText.toLowerCase().indexOf(filter) > -1) {
+                                display = true;
+                            }
+                        }
+                    }
+
+                    if (display) {
+                        tr[i].style.display = '';
+                    } else {
+                        tr[i].style.display = 'none';
+                    }
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

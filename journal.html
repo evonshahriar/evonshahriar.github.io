@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Journal - Md Evon Shahriar Sohan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .book-container {
+            width: 600px;
+            height: 800px;
+            margin: 50px auto;
+            perspective: 1500px;
+            position: relative;
+            background-color: #8B4513;
+            padding: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .clipper {
+            width: 120px;
+            height: 40px;
+            background: #444;
+            position: absolute;
+            top: -20px;
+            left: calc(50% - 60px);
+            border-radius: 15px 15px 0 0;
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .clipper::before {
+            content: '';
+            width: 100px;
+            height: 20px;
+            background: #666;
+            position: absolute;
+            top: 10px;
+            border-radius: 10px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .clipper::after {
+            content: '';
+            width: 100px;
+            height: 15px;
+            background: #333;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+
+        .book {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .page {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #F4E6C0;
+            transition: transform 0.5s;
+            backface-visibility: hidden;
+            transform-origin: left center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .page-content {
+            padding: 40px;
+            box-sizing: border-box;
+            background-image: url('old-map.jpg');
+            background-color: #F4E6C0;
+            font-family: 'Georgia', serif;
+            color: #4A4A4A;
+            line-height: 1.6;
+            border: 15px solid #D2B48C;
+            box-shadow: inset 0 0 20px rgba(139, 69, 19, 0.4);
+            height: 100%;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 0.9em;
+            color: #8B4513;
+            font-style: italic;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            color: #8B4513;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 { font-size: 2.5em; }
+        h2 { font-size: 2em; }
+        h3 { font-size: 1.5em; }
+
+        p, ul {
+            font-size: 1em;
+            margin-bottom: 15px;
+            font-family: 'Georgia', serif;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        ul li::before {
+            content: "•";
+            color: #8B4513;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .navigation {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            right: 10px;
+            display: flex;
+            justify-content: space-between;
+            z-index: 100;
+        }
+
+        .nav-button {
+            background-color: rgba(139, 69, 19, 0.7);
+            color: #F4E6C0;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(139, 69, 19, 0.9);
+        }
+
+        .nav-button:disabled {
+            background-color: rgba(139, 69, 19, 0.3);
+            cursor: not-allowed;
+        }
+
+        .decorative {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            height: 20px;
+            background: url('wood-pattern.jpg') repeat;
+        }
+
+        .handwriting {
+            font-family: 'Cursive', sans-serif;
+            font-size: 1.1em;
+            color: #4A4A4A;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"></header>
+
+    <main class="container">
+        <div class="book-container">
+            <div class="clipper"></div>
+            <div class="navigation">
+                <button id="prevBtn" class="nav-button" disabled><i class="fas fa-chevron-left"></i></button>
+                <button id="nextBtn" class="nav-button"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="book" id="book">
+                <!-- Pages will be dynamically added here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Md Evon Shahriar Sohan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+
+            const book = document.getElementById('book');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            let currentPage = 0;
+
+            const pages = [
+                {
+                    title: "Weekly Journal",
+                    content: `
+                        <div class="handwriting">
+                            <p>Welcome to my weekly journal. Here, I share updates on my research, learning experiences, and reflections on my academic and self-development journey.</p>
+                        </div>
+                    `
+                },
+                {
+                    title: "Week of July 22, 2024",
+                    content: `
+                        <h3>Accomplishments</h3>
+                        <ul>
+                            <li>Completed literature review for AI-based water quality monitoring project.</li>
+                            <li>Attended advanced machine learning workshop at MMU.</li>
+                            <li>Submitted abstract for International Conference on Sustainable Technologies.</li>
+                        </ul>
+                        <h3>Challenges</h3>
+                        <p>Data preprocessing difficulties; exploring techniques for missing values and outliers.</p>
+                        <h3>Learnings</h3>
+                        <p>Discovered new feature selection approach to improve model performance.</p>
+                        <h3>Next Week's Goals</h3>
+                        <ul>
+                            <li>Begin AI model implementation for water quality prediction.</li>
+                            <li>Schedule meetings with Environmental Science collaborators.</li>
+                            <li>Prepare presentation for research group meeting.</li>
+                        </ul>
+                    `
+                },
+                {
+                    title: "Week of July 29, 2024",
+                    content: `
+                        <h3>Accomplishments</h3>
+                        <ul>
+                            <li>Implemented initial version of AI model for water quality prediction.</li>
+                            <li>Met with two potential collaborators from Environmental Science department.</li>
+                            <li>Delivered presentation on research progress to the group.</li>
+                        </ul>
+                        <h3>Challenges</h3>
+                        <p>Model accuracy is lower than expected. Need to investigate potential reasons and optimize the algorithm.</p>
+                        <h3>Learnings</h3>
+                        <p>Gained insights into interdisciplinary collaboration and the importance of clear communication when discussing technical concepts with non-technical stakeholders.</p>
+                        <h3>Next Week's Goals</h3>
+                        <ul>
+                            <li>Optimize AI model to improve accuracy.</li>
+                            <li>Begin drafting research paper on methodology and preliminary results.</li>
+                            <li>Set up collaborative workspace for interdisciplinary team.</li>
+                        </ul>
+                    `
+                },
+                {
+                    title: "Week of August 5, 2024",
+                    content: `
+                        <h3>Accomplishments</h3>
+                        <ul>
+                            <li>Improved AI model accuracy by 15% through feature engineering and hyperparameter tuning.</li>
+                            <li>Completed first draft of introduction and methodology sections for research paper.</li>
+                            <li>Established shared online workspace for collaboration with Environmental Science team.</li>
+                        </ul>
+                        <h3>Challenges</h3>
+                        <p>Balancing technical depth of paper with accessibility for broader audience is proving difficult.</p>
+                        <h3>Learnings</h3>
+                        <p>Realized the critical importance of domain knowledge in feature engineering. Insights from Environmental Science collaborators were crucial in improving our model.</p>
+                        <h3>Next Week's Goals</h3>
+                        <ul>
+                            <li>Begin real-world testing of AI model with live data streams.</li>
+                            <li>Complete results section of research paper.</li>
+                            <li>Prepare for department-wide seminar on AI applications in environmental monitoring.</li>
+                        </ul>
+                    `
+                },
+                {
+                    title: "Week of August 12, 2024",
+                    content: `
+                        <h3>Accomplishments</h3>
+                        <ul>
+                            <li>Initiated real-world testing of AI model using live data from three local water sources.</li>
+                            <li>Finalized results section of research paper, including visualizations of findings.</li>
+                            <li>Delivered well-received seminar on AI applications in environmental monitoring to the department.</li>
+                        </ul>
+                        <h3>Challenges</h3>
+                        <p>Live data introduced unexpected variables our model wasn't initially prepared for. Need to refine approach to handle real-world complexities.</p>
+                        <h3>Learnings</h3>
+                        <p>The importance of robust error handling and data validation in real-time systems cannot be overstated. Seminar revealed growing interest in AI applications across various environmental fields.</p>
+                        <h3>Next Week's Goals</h3>
+                        <ul>
+                            <li>Refine AI model based on insights from live data testing.</li>
+                            <li>Begin drafting discussion and conclusion sections of research paper.</li>
+                            <li>Explore potential funding opportunities for expanding research scope.</li>
+                        </ul>
+                    `
+                }
+            ];
+
+            function createPage(pageData, index) {
+                const page = document.createElement('div');
+                page.className = 'page';
+                page.innerHTML = `
+                    <div class="decorative"></div>
+                    <div class="page-content">
+                        <h2>${pageData.title}</h2>
+                        ${pageData.content}
+                        <div class="page-number">${index + 1}</div>
+                    </div>
+                `;
+                return page;
+            }
+
+            function showPage(index) {
+                book.innerHTML = '';
+                const page = createPage(pages[index], index);
+                book.appendChild(page);
+                updateButtons();
+            }
+
+            function updateButtons() {
+                prevBtn.disabled = currentPage === 0;
+                nextBtn.disabled = currentPage === pages.length - 1;
+            }
+
+            function goNextPage() {
+                if (currentPage < pages.length - 1) {
+                    currentPage++;
+                    showPage(currentPage);
+                }
+            }
+
+            function goPrevPage() {
+                if (currentPage > 0) {
+                    currentPage--;
+                    showPage(currentPage);
+                }
+            }
+
+            prevBtn.addEventListener('click', goPrevPage);
+            nextBtn.addEventListener('click', goNextPage);
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') {
+                    goPrevPage();
+                } else if (e.key === 'ArrowRight') {
+                    goNextPage();
+                }
+            });
+
+            // Initial setup
+            showPage(0);
+        });
+    </script>
+    
+</body>
+</html>

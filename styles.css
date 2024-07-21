@@ -1,0 +1,351 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #f0e6d2;
+    background-color: #1a1a1a;
+    background-image: url('mystical.webp'); /* Background image */
+    background-size: cover;
+    background-attachment: local;
+    margin: 0;
+    padding: 0;
+    cursor: url('cursor-wan.png'), auto; /* Custom cursor */
+}
+
+/* Container styling */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(26, 26, 26, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Center text */
+.center-text {
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    background-color: #740001;
+    color: #d3a625;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+/* Header container styling */
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo styling */
+.logo {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #d3a625;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation styling */
+nav {
+    margin-top: 10px;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensure alignment with search form */
+}
+
+nav a {
+    position: relative;
+    color: #d3a625;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 0.9em;
+    transition: color 0.3s;
+    padding-bottom: 5px; /* To ensure there's space for the border */
+}
+
+nav a:hover {
+    color: #f0e6d2;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust as necessary */
+    width: 100%;
+    height: 2px; /* Thickness of the line */
+    background-color: #d3a625; /* Color of the line */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Search form styling */
+#header-search-form {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Space between links and search form */
+}
+
+#header-search-input {
+    width: 150px; /* Reduced width */
+    padding: 5px 10px; /* Adjusted padding */
+    border: 1px solid #d3a625;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 5px; /* Reduced margin */
+}
+
+#header-search-form button {
+    padding: 5px 10px; /* Adjusted padding */
+    background-color: #1a472a;
+    color: #d3a625;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+    cursor: pointer;
+}
+
+#header-search-form button:hover {
+    background-color: #2a623d;
+}
+
+/* Heading styling */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
+    color: #d3a625;
+    margin-bottom: 0.5em;
+}
+
+/* Main content styling */
+main {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Content styling */
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+}
+
+/* Journal entry styling */
+.journal-entry {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(26, 26, 26, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-button {
+    cursor: pointer;
+    color: #d3a625;
+    background: none;
+    border: none;
+    font-family: 'Cinzel', serif;
+    font-size: 1em;
+    text-align: left;
+    padding: 0;
+}
+
+.journal-content {
+    display: none;
+    margin-top: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Call to action and button styling */
+.cta-button, .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1a472a;
+    color: #d3a625;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+}
+
+.cta-button:hover, .button:hover {
+    background-color: #2a623d;
+}
+
+/* Profile photo styling */
+.profile-photo {
+    border-radius: 50%;
+    border: 5px solid #d3a625;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #740001;
+    color: #d3a625;
+    margin-top: 20px;
+    font-size: 0.8em;
+    font-family: 'Cinzel', serif;
+}
+
+/* List styling */
+.skill-list, .publication-list, .award-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-list li, .publication-list li, .award-list li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.skill-list li::before, .publication-list li::before, .award-list li::before {
+    content: '⚡';
+    position: absolute;
+    left: 0;
+    color: #d3a625;
+}
+
+/* Publication styling */
+.publication {
+    background-color: rgba(26, 71, 42, 0.7);
+    border-left: 4px solid #d3a625;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.publication h2 {
+    color: #d3a625;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.publication p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #f0e6d2;
+    font-size: 0.9em;
+}
+
+.publication a {
+    color: #c19a6b; /* Bronze color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.publication a:hover {
+    color: #f0e6d2; /* Light color on hover */
+    text-decoration: underline;
+}
+
+.publication:hover {
+    background-color: rgba(42, 98, 61, 0.8);
+}
+
+/* Custom text selection colors */
+::selection {
+    background: #d3a625; /* Background color of the selected text */
+    color: #1a1a1a; /* Text color of the selected text */
+}
+
+::-moz-selection { /* Firefox */
+    background: #d3a625; /* Background color of the selected text */
+    color: #1a1a1a; /* Text color of the selected text */
+}
+
+/* Search results styling */
+#search-results h2 {
+    font-family: 'Cinzel', serif;
+    color: #d3a625;
+    margin-bottom: 10px;
+}
+
+#search-results a {
+    color: #c19a6b;
+    text-decoration: none;
+}
+
+#search-results a:hover {
+    color: #f0e6d2;
+    text-decoration: underline;
+}
+
+mark {
+    background-color: yellow;
+    color: black;
+}
+
+/* Add this at the end of your styles.css file */
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

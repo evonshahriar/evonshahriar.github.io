@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Md Evon Shahriar Sohan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-column {
+            flex: 1;
+            min-width: 300px;
+            background-color: rgba(26, 26, 26, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .contact-list a {
+            color: #c19a6b; /* Bronze color */
+            text-decoration: none;
+        }
+
+        .contact-list a:hover {
+            color: #f0e6d2; /* Light color on hover */
+            text-decoration: underline;
+        }
+
+        .map-container {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"></header>
+
+    <main class="container">
+        <div class="contact-content">
+            <div class="contact-column">
+                <h1>Contact</h1>
+                <p>I'm always open to discussing research opportunities, collaborations, or answering any questions you might have. Feel free to reach out to me using the following contact information:</p>
+
+                <ul class="contact-list">
+                    <li><strong>Email:</strong> <a href="mailto:md.evon.shahriar@student.mmu.edu.my">md.evon.shahriar@student.mmu.edu.my</a></li>
+                    <li><strong>Phone:</strong> <a href="tel:+60178214656">+60178214656</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/evon" target="_blank">linkedin.com/in/evon</a></li>
+                </ul>
+            </div>
+            <div class="contact-column">
+                <h2>Current Location</h2>
+                <p>Room 2021, FCI Postgraduate Lab<br>
+                Universiti Multimedia (MMU)<br>
+                Faculty of Computing and Informatics<br>
+                Cyberjaya, 63100, Selangor, Malaysia</p>
+
+                <p>I look forward to hearing from you!</p>
+            </div>
+            <div class="map-container">
+                <!-- Google Maps Embed Code -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1992.30294027775!2d101.63930252194406!3d2.9290641850210433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb6e9ab2c6603%3A0xdedb9094d553b194!2sFaculty%20of%20Computing%20%26%20Informatics!5e0!3m2!1sen!2smy!4v1721570799583!5m2!1sen!2smy" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Md Evon Shahriar Sohan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        });
+    </script>
+    
+</body>
+</html>

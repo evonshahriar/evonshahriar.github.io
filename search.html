@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - Md Evon Shahriar Sohan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header"></header>
+
+    <main class="container">
+        <h1>Search</h1>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search..." required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="search-results"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Md Evon Shahriar Sohan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="search.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const query = urlParams.get('query');
+            if (query) {
+                document.getElementById('search-input').value = query;
+                performSearch(query);
+            }
+        });
+
+        function performSearch(query) {
+            const resultsContainer = document.getElementById('search-results');
+            resultsContainer.innerHTML = '';
+
+            const pages = [
+                { title: 'Home', url: 'index.html', content: 'Evon Shahriar Computer Engineer AI Researcher Welcome to My Web Archive tech innovation image analysis environmental monitoring' },
+                { title: 'About', url: 'about.html', content: 'About Md Evon Shahriar Sohan Computer Engineer AI Researcher Summary Education Awards Professional Experience Skills Languages' },
+                { title: 'Projects', url: 'projects.html', content: 'Projects AI-based Water Quality Monitoring System Optimizing Development Aid Allocation Navigation App for Visually Impaired' },
+                { title: 'Publications', url: 'publications.html', content: 'Publications Optimizing development aid allocation data-driven approach unsupervised machine learning multidimensional indices' },
+                { title: 'Weekly Journal', url: 'journal.html', content: 'Weekly Journal research learning experiences reflections academic self-development' },
+                { title: 'Contact', url: 'contact.html', content: 'Contact research opportunities collaborations questions contact information email phone LinkedIn location' }
+            ];
+
+            const results = pages.filter(page => page.content.toLowerCase().includes(query.toLowerCase()));
+
+            if (results.length > 0) {
+                results.forEach(result => {
+                    const highlightedContent = result.content.replace(new RegExp(query, 'gi'), match => `<mark>${match}</mark>`);
+                    const resultItem = document.createElement('div');
+                    resultItem.innerHTML = `
+                        <h2><a href="${result.url}">${result.title}</a></h2>
+                        <p>${highlightedContent}</p>
+                    `;
+                    resultsContainer.appendChild(resultItem);
+                });
+            } else {
+                resultsContainer.innerHTML = '<p>No results found.</p>';
+            }
+        }
+
+        document.getElementById('search-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const query = document.getElementById('search-input').value;
+            performSearch(query);
+        });
+    </script>
+    
+</body>
+</html>
