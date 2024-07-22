@@ -6,7 +6,7 @@
 
 Welcome to the repository for my personal website! This digital space serves as a professional portfolio showcasing my expertise in computer engineering and AI research, along with my projects, publications, and contact information.
 
-![Website Preview](https://via.placeholder.com/800x400?text=Website+Preview)
+![Website Preview](website-preview.png)
 
 ## 📚 Table of Contents
 
