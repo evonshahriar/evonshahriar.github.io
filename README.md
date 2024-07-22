@@ -44,7 +44,7 @@ graph LR
 
 <td width="33%">
 
-<strong>📂 Project Structure</strong>
+<strong>📂 File Structure</strong>
 
 ```
 personal-website/
