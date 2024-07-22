@@ -1,82 +1,110 @@
-# Evon Shahriar's Personal Website
+# Evon Shahriar's Personal Website 🌐
 
-Welcome to the repository for Evon Shahriar's personal website. This website serves as a professional portfolio showcasing my expertise in computer engineering and AI research, along with my projects, publications, and contact information.
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![Website](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)](http://monip.org/)
+[![Made with Love](https://img.shields.io/badge/Made%20with-Love-ff69b4.svg)](https://github.com/evonshahriar)
 
-## Table of Contents
-- [Overview](#overview)
-- [Project Structure](#project-structure)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Customization](#customization)
-- [Contributing](#contributing)
-- [License](#license)
+Welcome to the repository for my personal website! This digital space serves as a professional portfolio showcasing my expertise in computer engineering and AI research, along with my projects, publications, and contact information.
 
-## Overview
-This website highlights my academic and professional journey, providing a platform to share my projects, publications, and contact details. It includes sections for a brief introduction, detailed background, projects, publications, weekly journal, and contact information.
+![Website Preview](https://via.placeholder.com/800x400?text=Website+Preview)
 
-## Project Structure
-The project consists of the following files:
+## 📚 Table of Contents
 
-- `index.html`: The landing page of the website.
-- `about.html`: Detailed information about my background and accomplishments.
-- `projects.html`: Overview of my ongoing and completed projects.
-- `publications.html`: List of my publications.
-- `journal.html`: Weekly journal entries documenting my research journey.
-- `contact.html`: Contact information and a Google Maps embed for my location.
-- `search.html`: Search functionality to find content within the website.
-- `header.html`: Common header file included in all pages.
-- `footer.html`: Common footer file included in all pages.
-- `styles.css`: Custom styles for the website.
-- `common.js`: Common JavaScript functions used across the website.
+- [Overview](#-overview)
+- [Project Structure](#-project-structure)
+- [Features](#-features)
+- [Technologies Used](#-technologies-used)
+- [Getting Started](#-getting-started)
+- [Customization](#-customization)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-## Features
-- **Responsive Design**: Optimized for both desktop and mobile views.
-- **Accordions**: Collapsible sections for a cleaner and more compact presentation of information.
-- **Search Functionality**: Search form to quickly find content across the website.
-- **Projects and Publications**: Separate pages for projects and publications with detailed descriptions.
-- **Weekly Journal**: A section to document and share weekly research updates.
-- **Contact Page**: Includes a contact form and a Google Maps embed for location.
+## 🌟 Overview
 
-## Technologies Used
-- **HTML5**: For the structure of the web pages.
-- **CSS3**: For styling the web pages, including Flexbox and Grid for layout.
-- **JavaScript**: For interactive elements and dynamic content loading.
-- **Google Fonts**: For custom typography.
-- **Responsive Design**: Ensures the site looks great on all devices.
+This website highlights my academic and professional journey, providing a platform to share my:
 
-## Getting Started
-To get started with the project, follow these steps:
+- Projects
+- Publications
+- Weekly research journal
+- Contact details
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/evonshahriar/personal-website.git
-    ```
+It includes sections for a brief introduction, detailed background, and more.
 
-2. **Navigate to the project directory**:
-    ```bash
-    cd personal-website
-    ```
+## 📂 Project Structure
 
-3. **Open the `index.html` file in your preferred browser**.
+```
+personal-website/
+├── index.html
+├── about.html
+├── projects.html
+├── publications.html
+├── journal.html
+├── contact.html
+├── search.html
+├── header.html
+├── footer.html
+├── styles.css
+└── common.js
+```
 
-## Customization
-Feel free to customize the website to better suit your needs. Here are a few suggestions:
+## 🚀 Features
 
-- **Update Content**: Modify the text content in the HTML files to reflect your own information.
-- **Change Styles**: Edit the `styles.css` file to change the look and feel of the website.
-- **Add New Sections**: Add new HTML files and update the navigation in `header.html` to include new sections.
+- **Responsive Design**: Optimized for both desktop and mobile views
+- **Accordions**: Collapsible sections for a cleaner presentation
+- **Search Functionality**: Quick content discovery across the website
+- **Projects and Publications**: Dedicated pages with detailed descriptions
+- **Weekly Journal**: Document and share research updates
+- **Contact Page**: Includes a form and Google Maps embed
 
-## Contributing
-Contributions are welcome! If you have suggestions for improvements, please create a pull request or open an issue.
+## 💻 Technologies Used
 
-## License
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+- ![Google Fonts](https://img.shields.io/badge/google_fonts-4285F4?style=for-the-badge&logo=google&logoColor=white)
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/evonshahriar/personal-website.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd personal-website
+   ```
+
+3. Open `index.html` in your preferred browser.
+
+## 🎨 Customization
+
+Make it your own:
+
+- Update content in HTML files
+- Modify `styles.css` for a unique look
+- Add new sections by creating HTML files and updating `header.html`
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how:
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-Thank you for visiting my website. For any questions or collaborations, feel free to [contact me](contact.html).
+Thank you for visiting my website repository. For questions or collaborations, feel free to [contact me](contact.html).
 
 ---
 
 © 2024 Md Evon Shahriar Sohan. All rights reserved.
+
+<p align="center">Made with ❤️ by Evon Shahriar</p>
