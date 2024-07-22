@@ -67,21 +67,8 @@
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>© 2024 Md Evon Shahriar Sohan. All rights reserved.</p>
-        </div>
-    </footer>
+    <footer id="footer"></footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header').innerHTML = data;
-                });
-        });
-    </script>
-    
+    <script src="common.js"></script>
 </body>
 </html>
