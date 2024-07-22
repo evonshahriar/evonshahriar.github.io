@@ -1,10 +1,12 @@
 <div align="center">
 
-# Evon's Minimalistic Personal Website 🌐
+# A Minimalistic Personal Website 🌐
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white)](https://pages.github.com/)
+[![Static Badge](https://img.shields.io/badge/Website-Static-blue)](#)
 
 ![Website Preview](website-preview.png)
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) [![Website](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)](http://monip.org/) [![Made with Love](https://img.shields.io/badge/Made%20with-Love-ff69b4.svg)](https://github.com/evonshahriar)
 
 </div>
 
@@ -12,7 +14,7 @@
 
 <table>
 <tr>
-<td width="50%">
+<td width="33%">
 
 ## 🚀 Features
 
@@ -25,7 +27,7 @@
 - Site-wide Search
 
 </td>
-<td width="50%">
+<td width="33%">
 
 ## 💻 Tech Stack
 
@@ -38,13 +40,11 @@ graph LR
 ```
 
 </td>
-</tr>
-</table>
 
----
 
-<details>
-<summary><strong>📂 Project Structure</strong></summary>
+<td width="33%">
+
+<strong>📂 Project Structure</strong>
 
 ```
 personal-website/
@@ -57,8 +57,9 @@ personal-website/
 ├── 🎨 styles.css
 └── 🔧 common.js
 ```
-
-</details>
+</td>
+</tr>
+</table>
 
 ---
 
@@ -72,7 +73,7 @@ git clone https://github.com/evonshahriar/personal-website.git && cd personal-we
 
 <table>
 <tr>
-<td width="50%">
+<td width="33%">
 
 ## 🛠 Customize
 
@@ -80,10 +81,9 @@ git clone https://github.com/evonshahriar/personal-website.git && cd personal-we
 2. Modify `styles.css`
 3. Extend `common.js`
 
-> 💡 Maintain design consistency!
 
 </td>
-<td width="50%">
+<td width="33%">
 
 ## 🤝 Contribute
 
@@ -93,22 +93,22 @@ git clone https://github.com/evonshahriar/personal-website.git && cd personal-we
 4. Push
 5. Pull request
 
-[Detailed Guide](CONTRIBUTING.md)
 
 </td>
-</tr>
-</table>
 
----
+<td width="33%">
 
 <div align="center">
 
-**[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/evonshahriar/)  [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/evonshahriar)  [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sohanmdevonshahriar@gmail.com)**
+**<br><br> [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/evonshahriar/) <br> [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/evonshahriar) <br> [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sohanmdevonshahriar@gmail.com)**
 
 
 
-© 2024 Md Evon Shahriar Sohan | [MIT License](LICENSE)
+© 2024 Md Evon Shahriar Sohan 
 
-<kbd>[Support My Work](https://www.buymeacoffee.com/evonshahriar)</kbd>
+<!---<kbd>[Support My Work](https://www.buymeacoffee.com/evonshahriar)</kbd><!---
 
 </div>
+</td>
+</tr>
+</table>
