@@ -1,5 +1,5 @@
 # Evon Shahriar's Personal Website 🌐
-### Minimalistic Github Pages Site
+### Minialistic Github Pages Site
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![Website](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)](http://monip.org/)
