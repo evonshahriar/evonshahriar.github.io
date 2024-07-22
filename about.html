@@ -3,147 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Md Evon Shahriar Sohan - Computer Engineer & AI Researcher</title>
+    <title>About - Evon Shahriar</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            background-color: #1a1a1a;
-            color: #f0e6d2;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: rgba(26, 26, 26, 0.85);
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        }
-
-        .center-text {
-            text-align: center;
-        }
-
         h1, h2, h3 {
             font-family: 'Cinzel', serif;
             color: #d3a625;
         }
-
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+        .hero {
+            background: url('ai-sustainability-bg.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 50px 0;
+            text-align: center;
         }
-
-        .column {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-            padding-left: 25px;
-            position: relative;
-        }
-
-        ul li::before {
-            content: '⚡';
-            position: absolute;
-            left: 0;
-            color: #d3a625;
-        }
-
-        .award-list li::before {
-            content: '🏆';
-        }
-
         .profile-photo {
             border-radius: 50%;
             border: 5px solid #d3a625;
-            max-width: 200px;
-            display: block;
-            margin: 0 auto 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2a623d;
+            color: #d3a625;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 10px;
+        }
+        .cta-button:hover {
+            background-color: #3a724d;
+            transform: scale(1.05);
+        }
+        .accordion-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px; /* Adjust the gap between accordions */
+        }
+        .accordion {
+            background-color: #740001;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: background-color 0.3s;
+            color: #d3a625; /* Set accordion header text color */
+            border-bottom: 3px solid #d3a625; /* Set the bottom line color */
+        }
+        .accordion:hover,
+        .accordion.active {
+            background-color: #2a623d;
+        }
+        .accordion-content {
+            display: none;
+            padding: 10px;
+            color: #ffffff; /* Set accordion content text color */
+            grid-column: span 2;
+        }
+        .accordion-content table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .accordion-content th, .accordion-content td {
+            border: 1px solid #d3a625;
+            padding: 8px;
+        }
+        .contact-link {
+            color: #d3a625;
+            text-decoration: underline;
+        }
+        .contact-link:hover {
+            text-decoration: none;
+        }
+        .center-text {
+            text-align: center;
+        }
+        .closing {
+            margin-top: 20px;
+        }
+        footer {
+            padding: 20px 0;
+            background-color: #1a1a1a;
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var acc = document.getElementsByClassName("accordion");
+            for (var i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    var isActive = this.classList.contains("active");
+                    for (var j = 0; j < acc.length; j++) {
+                        acc[j].classList.remove("active");
+                        acc[j].nextElementSibling.style.display = "none";
+                    }
+                    if (!isActive) {
+                        this.classList.add("active");
+                        this.nextElementSibling.style.display = "block";
+                    }
+                });
+            }
+        });
+    </script>
 </head>
 <body>
     <header id="header"></header>
 
     <main class="container">
-        <h1 class="center-text">About Me</h1>
-        <img src="evon-logo.png" alt="Md Evon Shahriar Sohan" class="profile-photo">
-        <div class="content">
-            <section class="column">
-                <h2>Summary</h2>
-                <p>
-                    I'm a computer engineer, diving deep into the realm of AI, joining cutting-edge research focused on sustainability, 
-                    and crafting innovative solutions that make a real difference.
-                </p>
+        <section class="hero">
+            <h1>About Evon Shahriar</h1>
+            <img src="evon-logo.png" alt="Evon Shahriar" class="profile-photo">
+            <div>
+                <a href="cv-evon.pdf" class="cta-button">Download CV</a>
+            </div>
+        </section>
 
-                <h2>Education</h2>
-                <ul>
-                    <li>Master of Computing (By Research), Universiti Multimedia (MMU), Malaysia (2024-Present)</li>
-                    <li>B.Eng. in Computer Science and Technology, Southwest Forestry University (SWFU), China (2018-2022)</li>
-                    <li>Higher Secondary Certificate in Science, Gazipur Cantonment College, Bangladesh (2014-2016)</li>
-                    <li>Secondary School Certificate in Science, Gazipur Cant. Board High School, Bangladesh (2004-2014)</li>
-                </ul>
+        <section class="profile-section">
+            <h2>TL;DR</h2>
+            <p>Hello! I'm Evon Shahriar, a Computer Engineer and AI Researcher currently pursuing a Master of Computing (Research) at Universiti Multimedia (MMU), Malaysia. With a Bachelor of Engineering in Computer Science from Southwest Forestry University, China, I have a strong foundation in coding and algorithms. My research focuses on quantum machine learning, medical image analysis, and Explainable AI. I have also developed AI systems for water quality monitoring, optimized development aid allocation frameworks, and designed a navigation app for the visually impaired. Proficient in various programming languages and data science tools, I am passionate about innovative solutions for sustainability.</p>
+        </section>
 
-                <h2>Awards</h2>
-                <ul class="award-list">
-                    <li>MMU High Achievers Research Scholarship (2024)</li>
-                    <li>SWFU Dean's Award Nomination for Outstanding Bachelor Thesis (2021)</li>
-                    <li>Full-ride Scholarship for Bachelor Studies, SWFU (2018-2022)</li>
-                    <li>Sena Kalyan Educational Grant for achieving A+ in all subjects on public board exams (2014-2016)</li>
-                </ul>
-            </section>
+        <div class="accordion-container">
+            <div class="accordion">Education</div>
+            <div class="accordion-content">
+                <table>
+                    <tr><th>Current</th></tr>
+                    <tr>
+                        <td><strong>Master of Computing (Research)</strong><br>Universiti Multimedia (MMU), Malaysia (2024-Present)<br>Engaged in advanced research and innovation.</td>
+                    </tr>
+                    <tr><th>Past</th></tr>
+                    <tr>
+                        <td><strong>B.Eng. in Computer Science and Technology</strong><br>Southwest Forestry University (SWFU), China (2018-2022)<br>Focused on coding and algorithms.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Higher Secondary Certificate in Science</strong><br>Gazipur Cantonment College, Bangladesh (2014-2016)<br>Achieved a GPA of 5.00 out of 5.00.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Secondary School Certificate in Science</strong><br>Gazipur Cant. Board High School, Bangladesh (2004-2014)<br>Achieved a GPA of 5.00 out of 5.00.</td>
+                    </tr>
+                </table>
+            </div>
 
-            <section class="column">
-                <h2>Professional Experience</h2>
-                <article>
-                    <h3>Research Student, Mahdy's Research Academy, Bangladesh (12/23 – 12/24)</h3>
-                    <p>Conducted research on quantum machine learning, medical image analysis, and XAI under the supervision of Assoc. Prof. Dr. Mahdy Rahman Chowdhury.</p>
-                </article>
-                <article>
-                    <h3>Engineering Student Intern, Huaxin Zhiyuan EdTech Co. Ltd., China (09/21 – 10/21)</h3>
-                    <p>Collaborated with WISEZONE, conducting security audits and risk assessments to fortify data systems.</p>
-                </article>
+            <div class="accordion">Awards</div>
+            <div class="accordion-content">
+                <table>
+                    <tr><td><strong>MMU High Achievers Research Scholarship (2024)</strong><br>Awarded by Prof. Dr. Tee Connie, Dean of MMU, Malaysia</td></tr>
+                    <tr><td><strong>SWFU Dean’s Award Nomination (2021)</strong><br>Category: Outstanding bachelor thesis, Nominated by Mr. Wang Xiaolin, SWFU, China</td></tr>
+                    <tr><td><strong>Full-ride Scholarship for Bachelor Studies (2018-2022)</strong><br>Awarded by Prof. Dr. Xu Hui, Vice-president of SWFU, China</td></tr>
+                    <tr><td><strong>Sena Kalyan Educational Grant (2014-2016)</strong><br>Category: Achieving A+ in all subjects on public board exams, Awarded by Sena Kalyan Sangstha, Bangladesh</td></tr>
+                </table>
+            </div>
 
-                <h2>Skills</h2>
-                <ul class="skill-list">
-                    <li>Programming: Python, R, Javascript, Scala, C++, SQL, HTML, CSS</li>
-                    <li>Big Data & ML: Spark, Hadoop, MongoDB, TensorFlow, Keras, PyTorch</li>
-                    <li>Data Science: A/B testing, ETL, hypothesis testing, data visualization, statistical analysis</li>
-                </ul>
+            <div class="accordion">Professional Experience</div>
+            <div class="accordion-content">
+                <table>
+                    <tr><td><strong>Research Student</strong><br>Mahdy's Research Academy, Bangladesh (12/23 – 12/24)<br>Researched quantum machine learning, analyzed medical images, worked on Explainable AI.</td></tr>
+                    <tr><td><strong>Engineering Student Intern</strong><br>Huaxin Zhiyuan EdTech Co. Ltd., China (09/21 – 10/21)<br>Conducted security audits and risk assessments, collaborated with WISEZONE under Mr. Xinglin Gong’s mentorship.</td></tr>
+                </table>
+            </div>
 
-                <h2>Languages</h2>
-                <ul class="skill-list">
-                    <li>English: Fluent</li>
-                    <li>Bengali: Mother-tongue</li>
-                </ul>
-            </section>
+            <div class="accordion">Project Experience</div>
+            <div class="accordion-content">
+                <table>
+                    <tr><td><strong>Water Quality Monitoring</strong><br>Built an AI-based system for monitoring water quality.</td></tr>
+                    <tr><td><strong>Optimizing Development Aid Allocation</strong><br>Developed a data-driven framework using unsupervised machine learning and multidimensional indices.</td></tr>
+                    <tr><td><strong>Visually Impaired Navigation App</strong><br>Designed an application to assist visually impaired individuals in navigation.</td></tr>
+                </table>
+            </div>
+
+            <div class="accordion">Skills</div>
+            <div class="accordion-content">
+                <table>
+                    <tr><td><strong>Programming Languages</strong><br>Python, R, Javascript, Scala, C++, SQL, HTML, CSS</td></tr>
+                    <tr><td><strong>Big Data & ML</strong><br>Spark, Hadoop, MongoDB, TensorFlow, Keras, PyTorch</td></tr>
+                    <tr><td><strong>Data Science</strong><br>A/B testing, ETL, hypothesis testing, data visualization, statistical analysis</td></tr>
+                </table>
+            </div>
+
+            <div class="accordion">Languages</div>
+            <div class="accordion-content">
+                <table>
+                    <tr><td><strong>English:</strong> Fluent</td></tr>
+                    <tr><td><strong>Bengali:</strong> Native</td></tr>
+                </table>
+            </div>
         </div>
+
+        <section class="closing center-text">
+            <p>If you'd like to collaborate or learn more about my work, feel free to <a href="contact.html" class="contact-link">contact me</a>.</p>
+            <p>Thank you for visiting my page.</p>
+        </section>
     </main>
+    <footer id="footer"></footer>
 
-
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header').innerHTML = data;
-                });
-        });
-    </script>
-  
-  <footer id="footer"></footer>
-
-  <script src="common.js"></script>
+    <script src="common.js"></script>   
 </body>
 </html>
