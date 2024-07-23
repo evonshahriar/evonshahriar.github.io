@@ -16,7 +16,7 @@
 <tr>
 <td width="33%">
 
-## 🚀 Features
+## Features
 
 - Responsive Design
 - Project Showcase
@@ -28,7 +28,7 @@
 </td>
 <td width="33%">
 
-## 💻 Tech Stack
+## Tech Stack
 
 ```mermaid
 graph LR
@@ -61,7 +61,7 @@ personal-website/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 git clone https://github.com/evonshahriar/personal-website.git && cd personal-website && open index.html
