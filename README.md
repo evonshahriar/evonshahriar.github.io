@@ -22,8 +22,7 @@
 - Project Showcase
 - Publication Listings
 - Weekly Research Updates
-- Interactive Contact Form
-- Google Maps Integration
+- Contact Page with Google Maps Integration
 - Site-wide Search
 
 </td>
@@ -36,7 +35,6 @@ graph LR
     A[HTML5] --> D[Website]
     B[CSS3] --> D
     C[JavaScript] --> D
-    E[Google Fonts] --> D
 ```
 
 </td>
