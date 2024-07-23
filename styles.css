@@ -12,7 +12,7 @@ body {
     background-attachment: local;
     margin: 0;
     padding: 0;
-    cursor: url('cursor-wan.png'), auto; /* Custom cursor */
+    cursor: url('cursor-wand.png'), auto; /* Custom cursor */
 }
 
 /* Container styling */
