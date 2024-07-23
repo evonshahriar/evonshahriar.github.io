@@ -5,7 +5,7 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white)](https://pages.github.com/)
 [![Static Badge](https://img.shields.io/badge/Website-Static-blue)](#)
 
-![Website Preview](website-preview.png)
+![Website Preview](images/website-preview.png)
 
 
 </div>
