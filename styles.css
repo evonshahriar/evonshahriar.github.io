@@ -7,12 +7,12 @@ body {
     line-height: 1.6;
     color: #f0e6d2;
     background-color: #1a1a1a;
-    background-image: url('mystical.webp'); /* Background image */
+    background-image: url('images/mystical.webp'); /* Background image */
     background-size: cover;
     background-attachment: local;
     margin: 0;
     padding: 0;
-    cursor: url('cursor-wand.png'), auto; /* Custom cursor */
+    cursor: url('images/cursor-wand.png'), auto; /* Custom cursor */
 }
 
 /* Container styling */
