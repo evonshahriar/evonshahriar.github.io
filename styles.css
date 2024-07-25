@@ -1,8 +1,16 @@
 /* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
 
-/* Body styling */
+/* Sticky Footer Solution */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #f0e6d2;
@@ -10,13 +18,13 @@ body {
     background-image: url('images/mystical.webp'); /* Background image */
     background-size: cover;
     background-attachment: local;
-    margin: 0;
     padding: 0;
     cursor: url('images/cursor-wand.png'), auto; /* Custom cursor */
 }
 
 /* Container styling */
 .container {
+    flex: 1 0 auto;
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
@@ -218,11 +226,11 @@ main {
 
 /* Footer styling */
 footer {
+    flex-shrink: 0;
     text-align: center;
     padding: 10px 0;
     background-color: #740001;
     color: #d3a625;
-    margin-top: 20px;
     font-size: 0.8em;
     font-family: 'Cinzel', serif;
 }
@@ -317,7 +325,7 @@ mark {
     color: black;
 }
 
-/* Add this at the end of your styles.css file */
+/* Loading spinner */
 #loading {
     position: fixed;
     width: 100%;
@@ -406,5 +414,3 @@ mark {
         display: flex;
     }
 }
-
-
