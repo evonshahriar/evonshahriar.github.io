@@ -18,7 +18,7 @@ document.getElementById('search-form').addEventListener('submit', function(event
         { title: 'About', url: 'about.html', content: 'About Md Evon Shahriar Sohan Computer Engineer AI Researcher Summary Education Awards Professional Experience Skills Languages' },
         { title: 'Projects', url: 'projects.html', content: 'Projects AI-based Water Quality Monitoring System Optimizing Development Aid Allocation Navigation App for Visually Impaired' },
         { title: 'Publications', url: 'publications.html', content: 'Publications Optimizing development aid allocation data-driven approach unsupervised machine learning multidimensional indices' },
-        { title: 'Weekly Journal', url: 'journal.html', content: 'Weekly Journal research learning experiences reflections academic self-development' },
+        { title: 'Daily Journal', url: 'journal.html', content: 'Daily Journal research learning experiences reflections academic self-development' },
         { title: 'Contact', url: 'contact.html', content: 'Contact research opportunities collaborations questions contact information email phone LinkedIn location' }
     ];
 
