@@ -48,7 +48,7 @@ personal-website/
 ├── 📄 index.html
 ├── 📄 about.html
 ├── 📄 projects.html
-├── 📄 publications.html
+<!-- ├── 📄 publications.html -->
 ├── 📄 journal.html
 ├── 📄 contact.html
 ├── 🎨 styles.css
