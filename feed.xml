@@ -3,10 +3,59 @@
     <title>Evon</title>
     <link href="https://evonshahriar.github.io/feed.xml" rel="self" />
     <link href="https://evonshahriar.github.io" />
-    <updated>1970-01-01T07:30:00+07:30</updated>
+    <updated>2025-01-30T19:30:59+08:00</updated>
     <author>
-        <name>Md Evon Shahriar Sohan</name>
+        <name>Evon</name>
     </author>
     <id>https://evonshahriar.github.io</id>
 
+    <entry>
+        <title>Day 1: Master Research</title>
+        <author>
+            <name>Evon</name>
+        </author>
+        <link href="https://evonshahriar.github.io/30-jan-2025.html"/>
+        <id>https://evonshahriar.github.io/30-jan-2025.html</id>
+
+        <updated>2025-01-30T17:28:06+08:00</updated>
+            <summary>
+                <![CDATA[
+                    Today I’ll strive for balance in discipline, knowledge, spirituality, health, and morality.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Today I’ll strive for balance in discipline, knowledge, spirituality, health, and morality. My morning begins with timely prayers, a healthy breakfast, and organizing research tasks. The day is dedicated to conducting experiments, analyzing data, and staying hydrated. I ensure midday prayers and take breaks to connect with family. Evenings include light exercise, reflection, and planning for the next day. Through consistency, I work towards both personal and academic growth.  </p><h2 id="schedule"><strong>Schedule</strong></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Time of Day</strong></th>
+<th><strong>Activities</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>🌅 <strong>Morning</strong></td>
+<td>- Morning prayer <br> - Healthy breakfast &amp; hydration <br> - Plan research tasks</td>
+</tr>
+<tr>
+<td>☀️ <strong>Midday</strong></td>
+<td>- Research &amp; experiments <br> - Midday prayer <br> - Lunch &amp; hydration</td>
+</tr>
+<tr>
+<td>🌇 <strong>Afternoon</strong></td>
+<td>- Continue research <br> - Afternoon prayer <br> - Family check-in</td>
+</tr>
+<tr>
+<td>🌙 <strong>Evening</strong></td>
+<td>- Exercise/relaxation <br> - Evening prayer <br> - Dinner &amp; reflection</td>
+</tr>
+<tr>
+<td>🌌 <strong>Night</strong></td>
+<td>- Night prayer &amp; review <br> - Plan next steps <br> - Rest for a productive tomorrow</td>
+</tr>
+</tbody></table>
+
+            ]]>
+        </content>
+    </entry>
 </feed>

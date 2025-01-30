@@ -6,8 +6,22 @@
     "feed_url": "https://evonshahriar.github.io/feed.json",
     "user_comment": "",
     "author": {
-        "name": "Md Evon Shahriar Sohan"
+        "name": "Evon"
     },
     "items": [
+        {
+            "id": "https://evonshahriar.github.io/30-jan-2025.html",
+            "url": "https://evonshahriar.github.io/30-jan-2025.html",
+            "title": "Day 1: Master Research",
+            "summary": "Today I’ll strive for balance in discipline, knowledge, spirituality, health, and morality.",
+            "content_html": "<p>Today I’ll strive for balance in discipline, knowledge, spirituality, health, and morality. My morning begins with timely prayers, a healthy breakfast, and organizing research tasks. The day is dedicated to conducting experiments, analyzing data, and staying hydrated. I ensure midday prayers and take breaks to connect with family. Evenings include light exercise, reflection, and planning for the next day. Through consistency, I work towards both personal and academic growth.  </p><h2 id=\"schedule\"><strong>Schedule</strong></h2>\n<table>\n<thead>\n<tr>\n<th><strong>Time of Day</strong></th>\n<th><strong>Activities</strong></th>\n</tr>\n</thead>\n<tbody><tr>\n<td>🌅 <strong>Morning</strong></td>\n<td>- Morning prayer <br> - Healthy breakfast &amp; hydration <br> - Plan research tasks</td>\n</tr>\n<tr>\n<td>☀️ <strong>Midday</strong></td>\n<td>- Research &amp; experiments <br> - Midday prayer <br> - Lunch &amp; hydration</td>\n</tr>\n<tr>\n<td>🌇 <strong>Afternoon</strong></td>\n<td>- Continue research <br> - Afternoon prayer <br> - Family check-in</td>\n</tr>\n<tr>\n<td>🌙 <strong>Evening</strong></td>\n<td>- Exercise/relaxation <br> - Evening prayer <br> - Dinner &amp; reflection</td>\n</tr>\n<tr>\n<td>🌌 <strong>Night</strong></td>\n<td>- Night prayer &amp; review <br> - Plan next steps <br> - Rest for a productive tomorrow</td>\n</tr>\n</tbody></table>\n",
+            "author": {
+                "name": "Evon"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-01-30T17:28:06+08:00",
+            "date_modified": "2025-01-30T19:30:59+08:00"
+        }
     ]
 }
