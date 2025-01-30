@@ -3,7 +3,7 @@
     <title>Evon</title>
     <link href="https://evonshahriar.github.io/feed.xml" rel="self" />
     <link href="https://evonshahriar.github.io" />
-    <updated>2025-01-30T20:21:37+08:00</updated>
+    <updated>2025-01-30T20:23:30+08:00</updated>
     <author>
         <name>Evon</name>
     </author>
@@ -14,20 +14,17 @@
         <author>
             <name>Evon</name>
         </author>
-        <link href="https://evonshahriar.github.io/30-jan-2025.html"/>
-        <id>https://evonshahriar.github.io/30-jan-2025.html</id>
-        <media:content url="https://evonshahriar.github.io/media/posts/3/water-research-plan.png" medium="image" />
+        <link href="https://evonshahriar.github.io/day-1-water-research.html"/>
+        <id>https://evonshahriar.github.io/day-1-water-research.html</id>
 
-        <updated>2025-01-30T17:28:06+08:00</updated>
+        <updated>2025-01-30T20:23:30+08:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://evonshahriar.github.io/media/posts/3/water-research-plan.png" alt="" />
                     I am analyzing existing research on water quality, evaluating model performances, comparing&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://evonshahriar.github.io/media/posts/3/water-research-plan.png" class="type:primaryImage" alt="" /></p>
                 <p>I am analyzing existing research on water quality, evaluating model performances, comparing hybrid models with base models, and formulating an innovative solution for water quality anomaly detection. The goal is to identify gaps in current methodologies and propose a more effective approach.  </p><h2 id="tools"><strong>Tools</strong></h2>
 <ul>
 <li><strong>ChatGPT</strong> &amp; <strong>Google NotebookLM</strong> for research assistance  </li>
