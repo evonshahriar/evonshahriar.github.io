@@ -3,58 +3,104 @@
     <title>Evon</title>
     <link href="https://evonshahriar.github.io/feed.xml" rel="self" />
     <link href="https://evonshahriar.github.io" />
-    <updated>2025-01-30T19:30:59+08:00</updated>
+    <updated>2025-01-30T20:21:37+08:00</updated>
     <author>
         <name>Evon</name>
     </author>
     <id>https://evonshahriar.github.io</id>
 
     <entry>
-        <title>Day 1: Master Research</title>
+        <title>Day 1: Water Research</title>
         <author>
             <name>Evon</name>
         </author>
         <link href="https://evonshahriar.github.io/30-jan-2025.html"/>
         <id>https://evonshahriar.github.io/30-jan-2025.html</id>
+        <media:content url="https://evonshahriar.github.io/media/posts/3/water-research-plan.png" medium="image" />
 
         <updated>2025-01-30T17:28:06+08:00</updated>
             <summary>
                 <![CDATA[
-                    Today I’ll strive for balance in discipline, knowledge, spirituality, health, and morality.
+                        <img src="https://evonshahriar.github.io/media/posts/3/water-research-plan.png" alt="" />
+                    I am analyzing existing research on water quality, evaluating model performances, comparing&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>Today I’ll strive for balance in discipline, knowledge, spirituality, health, and morality. My morning begins with timely prayers, a healthy breakfast, and organizing research tasks. The day is dedicated to conducting experiments, analyzing data, and staying hydrated. I ensure midday prayers and take breaks to connect with family. Evenings include light exercise, reflection, and planning for the next day. Through consistency, I work towards both personal and academic growth.  </p><h2 id="schedule"><strong>Schedule</strong></h2>
+                    <p><img src="https://evonshahriar.github.io/media/posts/3/water-research-plan.png" class="type:primaryImage" alt="" /></p>
+                <p>I am analyzing existing research on water quality, evaluating model performances, comparing hybrid models with base models, and formulating an innovative solution for water quality anomaly detection. The goal is to identify gaps in current methodologies and propose a more effective approach.  </p><h2 id="tools"><strong>Tools</strong></h2>
+<ul>
+<li><strong>ChatGPT</strong> &amp; <strong>Google NotebookLM</strong> for research assistance  </li>
+<li><strong>Google Scholar</strong> for literature review  </li>
+<li><strong>Overleaf (LaTeX)</strong> for writing and documenting findings</li>
+</ul>
+<h2 id="hourly-research-plan"><strong>Hourly Research Plan</strong></h2>
 <table>
 <thead>
 <tr>
-<th><strong>Time of Day</strong></th>
-<th><strong>Activities</strong></th>
+<th><strong>Time</strong></th>
+<th><strong>Research Step</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td>🌅 <strong>Morning</strong></td>
-<td>- Morning prayer <br> - Healthy breakfast &amp; hydration <br> - Plan research tasks</td>
+<td><strong>08:00 - 09:00</strong></td>
+<td><strong>Research Planning &amp; Setup</strong> <br> - Define search queries &amp; key topics <br> - Gather relevant research papers (Google Scholar) <br> - Organize papers in a reference manager (Zotero/Mendeley)</td>
 </tr>
 <tr>
-<td>☀️ <strong>Midday</strong></td>
-<td>- Research &amp; experiments <br> - Midday prayer <br> - Lunch &amp; hydration</td>
+<td><strong>09:00 - 10:30</strong></td>
+<td><strong>Literature Review (Water Quality Research)</strong> <br> - Identify recent advancements in water quality research <br> - Take structured notes on methodologies &amp; key findings <br> - Use ChatGPT &amp; NotebookLM to summarize complex concepts</td>
 </tr>
 <tr>
-<td>🌇 <strong>Afternoon</strong></td>
-<td>- Continue research <br> - Afternoon prayer <br> - Family check-in</td>
+<td><strong>10:30 - 11:00</strong></td>
+<td><strong>Break &amp; Midday Prayer</strong> <br> - Short mental refresh &amp; hydration</td>
 </tr>
 <tr>
-<td>🌙 <strong>Evening</strong></td>
-<td>- Exercise/relaxation <br> - Evening prayer <br> - Dinner &amp; reflection</td>
+<td><strong>11:00 - 12:30</strong></td>
+<td><strong>Evaluating Model Performance</strong> <br> - Review the performance of existing models (ML/DL techniques) <br> - Identify pros &amp; cons of different approaches <br> - Compare accuracy, efficiency, and robustness</td>
 </tr>
 <tr>
-<td>🌌 <strong>Night</strong></td>
-<td>- Night prayer &amp; review <br> - Plan next steps <br> - Rest for a productive tomorrow</td>
+<td><strong>12:30 - 13:30</strong></td>
+<td><strong>Lunch &amp; Relaxation</strong> <br> - Eat a healthy meal <br> - Short break before resuming research</td>
+</tr>
+<tr>
+<td><strong>13:30 - 15:00</strong></td>
+<td><strong>Hybrid Models vs. Base Models</strong> <br> - Compare hybrid models with baseline models <br> - Identify advantages &amp; challenges <br> - Use ChatGPT &amp; NotebookLM for deeper insights</td>
+</tr>
+<tr>
+<td><strong>15:00 - 15:30</strong></td>
+<td><strong>Afternoon Prayer &amp; Break</strong> <br> - Short relaxation &amp; reflection</td>
+</tr>
+<tr>
+<td><strong>15:30 - 17:00</strong></td>
+<td><strong>Innovative Approach Development</strong> <br> - Brainstorm &amp; draft a novel solution for anomaly detection <br> - Identify potential algorithms &amp; techniques <br> - Outline implementation challenges</td>
+</tr>
+<tr>
+<td><strong>17:00 - 18:00</strong></td>
+<td><strong>Writing in Overleaf (LaTeX)</strong> <br> - Document research findings in a structured format <br> - Write the methodology section &amp; findings summary</td>
+</tr>
+<tr>
+<td><strong>18:00 - 19:00</strong></td>
+<td><strong>Dinner &amp; Evening Prayer</strong> <br> - Short break for refreshment</td>
+</tr>
+<tr>
+<td><strong>19:00 - 21:00</strong></td>
+<td><strong>Refining &amp; Structuring the Paper</strong> <br> - Finalize research findings <br> - Format references &amp; citations in LaTeX (BibTeX) <br> - Review and edit key sections</td>
+</tr>
+<tr>
+<td><strong>21:00 - 22:00</strong></td>
+<td><strong>Night Prayer &amp; Research Review</strong> <br> - Reflect on progress <br> - Plan next steps for follow-up research</td>
+</tr>
+<tr>
+<td><strong>22:00 - 23:00</strong></td>
+<td><strong>Final Paper Check &amp; Rest</strong> <br> - Proofread document in Overleaf <br> - Ensure clarity &amp; coherence <br> - Get proper rest for the next day</td>
 </tr>
 </tbody></table>
+<p align="center">
+    <img loading="lazy" src="https://raw.githubusercontent.com/evonshahriar/evonshahriar.github.io/main/images/water-research-plan.png" alt="Water Research Plan" width="600" data-is-external-image="true">
+</p>
 
+<h2 id="goal"><strong>Goal</strong></h2>
+<p>By the end of the day, I will have a comprehensive understanding of water quality research, model performance comparisons, and a well-documented draft outlining an innovative solution for anomaly detection. 🚀  </p>
             ]]>
         </content>
     </entry>
